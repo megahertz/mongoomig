@@ -1,0 +1,53 @@
+{
+  "name": "mongoomig",
+  "version": "0.0.1",
+  "description": "Yet another mongoose migration tool",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js lib",
+    "mocha": "mocha ./lib/**/*.spec.js",
+    "test": "npm run lint && npm run mocha"
+  },
+  "bin": {
+    "mongoomig": "./index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megahertz/mongoomig.git"
+  },
+  "files": [
+    "index.js",
+    "lib/*"
+  ],
+  "keywords": [
+    "mongoose",
+    "mongo",
+    "migration",
+    "es6",
+    "async"
+  ],
+  "author": "Alexey Prokhorov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/megahertz/mongoomig/issues"
+  },
+  "homepage": "https://github.com/megahertz/mongoomig#readme",
+  "engines": {
+    "node": ">=8.0"
+  },
+  "peerDependencies": {
+    "mongoose": ">=4"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "electron": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "mocha": "*",
+    "rewire": "*"
+  },
+  "dependencies": {
+    "mongoose": "^4.11.11"
+  }
+}
