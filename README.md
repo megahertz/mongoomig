@@ -55,6 +55,15 @@ Install with [npm](https://npmjs.org/package/mongoomig):
 
 Just it. Also you can check [the example](example/migrations).
 
+4. (Optional) Add the migration command to package.json script:
+
+```
+"scripts": {
+  "start": "node index.js",
+  "migrate": "mongoomig up"
+}
+```
+
 ## Options
 
 ### Command line
