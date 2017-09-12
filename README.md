@@ -13,7 +13,7 @@ Yet another mongoose migration tool
  - Mongoose 4.11 support without deprecation warning
  - Could be configured through command line arguments, environment
  variables or config file
- - No dependencies
+ - No dependencies, just one peer dependency - mongoose
 
 This module requires node 8 at least. But feel free to create an issue
 if you want this package to support older versions.
