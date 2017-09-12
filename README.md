@@ -92,14 +92,14 @@ Options:
 
 Also you can set a such options through environment variable. Just
 set MONGOOMIG_<OPTION_NAME_UPPERCASED>. For example,
-MONGOOMIG_COLLECTION environment variable is equal to collection
+the MONGOOMIG_COLLECTION environment variable is equal to the collection
 option.
 
 ### Config file
 
 Another way is to specify options inside a config. By default,
 this package tries to read a config from migrations/config.js. Here is
-an example of config:
+the example of such a config:
 
 ```js
 'use strict';
@@ -112,7 +112,7 @@ module.exports = {
 ### API
 
 If you would like to run migrations from your code instead of command
-line, you can use the api.
+line, you can use API.
 
 ```js
 const Migration = require('mongoomig/lib/Migration');
