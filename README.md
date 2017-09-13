@@ -80,8 +80,7 @@ Commands:
 Options:
   -c, --config=<path>   Load config from json or js file, default to
                           ./migrations/config.js
-  -u, --url=<url>       Mongodb connection string , defaults to
-                          mongodb://localhost/migrations
+  -u, --url=<url>       Mongodb connection string
   --collection=<name>   Migrations collection, defaults to migrations
   --path=<path>         Where your migrations are stored, defaults to
                           ./migrations
