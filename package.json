@@ -1,6 +1,6 @@
 {
   "name": "mongoomig",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Yet another mongoose migration tool",
   "main": "index.js",
   "scripts": {
@@ -45,9 +45,7 @@
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-import": "*",
     "mocha": "*",
+    "mongoose": "*",
     "rewire": "*"
-  },
-  "dependencies": {
-    "mongoose": "^4.11.11"
   }
 }
