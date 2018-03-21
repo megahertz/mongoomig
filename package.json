@@ -1,6 +1,6 @@
 {
   "name": "mongoomig",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Yet another mongoose migration tool",
   "main": "index.js",
   "scripts": {

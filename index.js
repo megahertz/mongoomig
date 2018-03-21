@@ -18,13 +18,15 @@ Commands:
   list            Show migrations which are applied
 
 Options:
-  -c, --config=<path>   Load config from json or js file, default to
-                          ./migrations/config.js
-  -u, --url=<url>       Mongodb connection string
-  --collection=<name>   Migrations collection, defaults to migrations
-  --path=<path>         Where your migrations are stored, defaults to
-                          ./migrations
-  --silent              Silent mode, defaults to false`;
+  -c, --config=<path>      Load config from json or js file, default to
+                             ./migrations/config.js
+  -u, --url=<url>          Mongodb connection string
+  --collection=<name>      Migrations collection, defaults to migrations
+  --path=<path>            Where your migrations are stored, defaults to
+                             ./migrations
+  --reconnectInterval=<ms> Try to reconnect every <ms>, default 300
+  --reconnectTries=<count> Try to reconnect <count> times, default 100
+  --silent                 Silent mode, defaults to false`;
 
 mongoose.Promise = global.Promise;
 
