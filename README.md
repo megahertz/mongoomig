@@ -22,7 +22,7 @@ if you want this package to support older versions.
 
 Install with [npm](https://npmjs.org/package/mongoomig):
 
-    $ npm install --save mongoomig
+    $ npm install mongoomig
 
 ## Usage
 
@@ -53,8 +53,6 @@ Install with [npm](https://npmjs.org/package/mongoomig):
 
     $ mongoomig up
 
-Just it. Also you can check [the example](example/migrations).
-
 4. (Optional) Add the migration command to package.json script:
 
 ```
@@ -63,6 +61,8 @@ Just it. Also you can check [the example](example/migrations).
   "migrate": "mongoomig up"
 }
 ```
+
+Also, you can check [the example](example/migrations).
 
 ## Options
 
@@ -91,10 +91,13 @@ Options:
 
 ### Environment variables
 
-Also you can set a such options through environment variable. Just
+Also, you can set a such options through environment variable. Just
 set MONGOOMIG_<OPTION_NAME_UPPERCASED>. For example,
 the MONGOOMIG_COLLECTION environment variable is equal to the collection
 option.
+
+Additionally, mongoomig tries to load the url option from the MONGO_URL
+environment variable if another ways are not available.
 
 ### Config file
 
