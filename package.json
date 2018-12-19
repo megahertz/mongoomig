@@ -1,20 +1,17 @@
 {
   "name": "mongoomig",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Yet another mongoose migration tool",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js lib",
-    "mocha": "mocha ./lib/**/*.spec.js",
+    "mocha": "mocha 'lib/**/*.spec.js'",
     "test": "npm run lint && npm run mocha"
   },
   "bin": {
     "mongoomig": "./index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/megahertz/mongoomig.git"
-  },
+  "repository": "megahertz/mongoomig",
   "files": [
     "index.js",
     "lib/*"
@@ -28,9 +25,7 @@
   ],
   "author": "Alexey Prokhorov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/megahertz/mongoomig/issues"
-  },
+  "bugs": "https://github.com/megahertz/mongoomig/issues",
   "homepage": "https://github.com/megahertz/mongoomig#readme",
   "engines": {
     "node": ">=8.0"
