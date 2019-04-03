@@ -22,12 +22,12 @@ Options:
                              ./migrations/config.js
   -u, --url=<url>          Mongodb connection string
   --collection=<name>      Migrations collection, defaults to migrations
-  --path=<path>            Where your migrations are stored, defaults to
+  -p, --path=<path>        Where your migrations are stored, defaults to
                              ./migrations
   --reconnectInterval=<ms> Try to reconnect every <ms>, default 300
   --reconnectTries=<count> Try to reconnect <count> times, default 100
-  --require=<module>       Require a module before loading migrations
-  --silent                 Silent mode, defaults to false`;
+  -r, --require=<module>   Require a module before loading migrations
+  -s, --silent             Silent mode, defaults to false`;
 
 mongoose.Promise = global.Promise;
 
