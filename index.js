@@ -2,12 +2,12 @@
 
 'use strict';
 
-const mongoose        = require('mongoose');
-const Config          = require('./lib/Config');
-const createMigration = require('./lib/createMigration');
-const Migration       = require('./lib/Migration');
-const migrationSchema = require('./lib/migrationSchema');
-const args            = require('./lib/parseConsoleArgs')();
+const mongoose         = require('mongoose');
+const Config           = require('./lib/Config');
+const createMigration  = require('./lib/createMigration');
+const Migration        = require('./lib/Migration');
+const migrationSchema  = require('./lib/migrationSchema');
+const parseConsoleArgs = require('./lib/parseConsoleArgs');
 
 const HELP = `Usage: mongoomig [options] <command>
 
@@ -26,11 +26,12 @@ Options:
                              ./migrations
   --reconnectInterval=<ms> Try to reconnect every <ms>, default 300
   --reconnectTries=<count> Try to reconnect <count> times, default 100
+  --require=<module>       Require a module before loading migrations
   --silent                 Silent mode, defaults to false`;
 
 mongoose.Promise = global.Promise;
 
-const cfg = new Config(args);
+const cfg = new Config(parseConsoleArgs());
 const MigrationModel = mongoose.model(
   'MigrationSchema',
   migrationSchema,

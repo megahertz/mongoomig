@@ -15,9 +15,6 @@ Yet another mongoose migration tool
  variables or config file
  - No dependencies, just one peer dependency - mongoose
 
-This module requires node 8 at least. But feel free to create an issue
-if you want this package to support older versions.
-
 ## Installation
 
 Install with [npm](https://npmjs.org/package/mongoomig):
@@ -64,6 +61,14 @@ Install with [npm](https://npmjs.org/package/mongoomig):
 
 Also, you can check [the example](example/migrations).
 
+### With Typescript
+
+You can compile your modules before migration, or use ts-node instead:
+```bash
+npm install -D ts-node
+mongomig up --require ts-node/register
+```
+
 ## Options
 
 ### Command line
@@ -86,6 +91,7 @@ Options:
                              ./migrations
   --reconnectInterval=<ms> Try to reconnect every <ms>, default 300
   --reconnectTries=<count> Try to reconnect <count> times, default 100
+  --require=<module>       Require a module before loading migrations
   --silent                 Silent mode, defaults to false
 ```
 
@@ -113,7 +119,7 @@ module.exports = {
 };
 ```
 
-### API
+## API
 
 If you would like to run migrations from your code instead of command
 line, you can use API.
