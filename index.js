@@ -27,7 +27,8 @@ Options:
   --reconnectInterval=<ms> Try to reconnect every <ms>, default 300
   --reconnectTries=<count> Try to reconnect <count> times, default 100
   -r, --require=<module>   Require a module before loading migrations
-  -s, --silent             Silent mode, defaults to false`;
+  -s, --silent             Silent mode, defaults to false
+  -d, --debug              Debug mode, defaults to false`;
 
 mongoose.Promise = global.Promise;
 
