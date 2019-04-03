@@ -34,6 +34,7 @@
     "mongoose": ">=4"
   },
   "devDependencies": {
+    "@types/node": "^11.13.0",
     "chai": "*",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
