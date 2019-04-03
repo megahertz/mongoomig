@@ -14,6 +14,7 @@ Yet another mongoose migration tool
  - Could be configured through command line arguments, environment
  variables or config file
  - No dependencies, just one peer dependency - mongoose
+ - Typescript support
 
 ## Installation
 
